@@ -1,3 +1,15 @@
+# TO-DO List for work:
+- Yolov11
+- Yolov26
+
+# TO-DO List for publication:
+- Faster R-CNN
+- RT-DETR
+- makale ve dergi taramasi: webofscience
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10677743
+- 
+
+
 # helmet-detection-yolov8
 # 🦺 Real-Time Helmet Detection with YOLOv8
 <p align="center">
