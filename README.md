@@ -7,7 +7,8 @@
 - RT-DETR
 - makale ve dergi taramasi: webofscience
 - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10677743
-- 
+- ANACONDA-Navigator for Jupyter Notebook/Lab
+- GPU icin ya kendi makinen, ya da Google Colab (daha hizli)
 
 
 # helmet-detection-yolov8
