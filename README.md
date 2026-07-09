@@ -1,10 +1,11 @@
 # helmet-detection-yolov8
 # 🦺 Real-Time Helmet Detection with YOLOv8
 <p align="center">
-  <img src="image_816de3.jpg" alt="Model Inference Test Result" width="800">
+  <img src="https://github.com/user-attachments/assets/2be9dc41-7be9-46a8-bad8-3a808a98724f" alt="Model Inference Test Result" width="800">
   <br>
   <em><p align="center"><b>Model Test Sonucu:</b> Model, yakın mesafede hem çıplak kafayı (head) hem de baretli insanı yüksek güven oranıyla başarıyla ayrıştırıyor.</p></em>
 </p>
+
 Bu proje, iş sağlığı ve güvenliği (İSG) standartlarına uygun olarak şantiye ve fabrika ortamlarında **baret kullanımını canlı kamera (real-time) üzerinden tespit etmek** amacıyla geliştirilmiştir. Proje, InnoVentures Tech bünyesindeki yaz stajım sürecinde geliştirilmiş ve optimize edilmiştir.
 
 ## 🚀 Öne Çıkan Özellikler & Çözülen Problemler (Troubleshooting)
