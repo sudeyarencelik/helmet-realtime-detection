@@ -7,7 +7,7 @@
 - RT-DETR
 - makale ve dergi taramasi: webofscience
 - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10677743
-- ANACONDA-Navigator for Jupyter Notebook/Lab
+- ANACONDA-Navigator for Jupyter Notebook/Lab (confusion matrix, loss over EPOCH, accuracy over EPOCH figurleri ve tablolari)
 - GPU icin ya kendi makinen, ya da Google Colab (daha hizli)
 
 
