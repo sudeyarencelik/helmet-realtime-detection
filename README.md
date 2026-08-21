@@ -1,16 +1,5 @@
-# TO-DO List for work:
-- Yolov11
-- Yolov26
-- Dataseti nereden aldigina dair link ekle buraya -> https://universe.roboflow.com/patricks-workspace-zye5m/safety-helmet-detection-mqtqd/dataset/2
 
-# TO-DO List for publication:
-- Faster R-CNN
-- RT-DETR
-- makale ve dergi taramasi: webofscience
-- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10677743
-- ANACONDA-Navigator for Jupyter Notebook/Lab (confusion matrix, loss over EPOCH, accuracy over EPOCH figurleri ve tablolari)
-- GPU icin ya kendi makinen, ya da Google Colab (daha hizli)
-
+- Dataset link -> https://universe.roboflow.com/patricks-workspace-zye5m/safety-helmet-detection-mqtqd/dataset/2
 
 # helmet-detection-yolov8
 # Real-Time Helmet Detection with YOLOv8
