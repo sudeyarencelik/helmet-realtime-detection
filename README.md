@@ -20,7 +20,7 @@ Bu proje, iş sağlığı ve güvenliği (İSG) standartlarına uygun olarak şa
 ### 🔍 Model Açıklanabilirliği (EigenCAM Görselleştirmeleri)
 
 <p align="center">
-  <img src="XAI_Output/ornek_eigencam_1.png" width="48%" alt="Screenshot 2026-08-24 104830.png">
+  <img src="Screenshot 2026-08-24 104830.png" width="48%" alt="model görselleştirmeleri">
 
 </p>
 
