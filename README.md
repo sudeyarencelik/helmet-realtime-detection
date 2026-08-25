@@ -11,6 +11,20 @@
 
 Bu proje, iş sağlığı ve güvenliği (İSG) standartlarına uygun olarak şantiye ve fabrika ortamlarında **baret kullanımını canlı kamera (real-time) üzerinden tespit etmek** amacıyla geliştirilmiştir. Proje, InnoVentures Tech bünyesindeki yaz stajım sürecinde geliştirilmiş ve optimize edilmiştir.
 
+# Real-Time Helmet Detection & Explainable AI (XAI)
+
+> YOLOv8, RT-DETR ve Faster R-CNN mimarileri ile gerçek zamanlı baret/kask tespiti ve **EigenCAM** tabanlı model açıklanabilirlik analizi.
+
+---
+
+### 🔍 Model Açıklanabilirliği (EigenCAM Görselleştirmeleri)
+
+<p align="center">
+  <img src="XAI_Output/ornek_eigencam_1.png" width="48%" alt="">
+
+</p>
+
+*Yukarıdaki ısı haritaları, modellerin karar verirken baret ve kafa bölgesindeki geometrik özniteliklere doğru şekilde odaklandığını göstermektedir.*
 ## Öne Çıkan Özellikler & Çözülen Problemler (Troubleshooting)
 
 Projenin ilk aşamalarında modelin uzak mesafeden iyi çalışmasına rağmen, yakın mesafede çıplak insan kafasını baret ile karıştırması (**Scale & Dataset Bias**) problemiyle karşılaşılmıştır. Bu sorunu kökten çözmek için şu optimizasyonlar uygulanmıştır:
