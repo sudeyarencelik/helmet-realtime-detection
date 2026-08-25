@@ -4,7 +4,7 @@
 # helmet-detection-yolov8
 # Real-Time Helmet Detection with YOLOv8
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2be9dc41-7be9-46a8-bad8-3a808a98724f" alt="Model Inference Test Result" width="800">
+  <img src="https://github.com/user-attachments/assets/2be9dc41-7be9-46a8-bad8-3a808a98724f" alt="Model Inference Test Result" width="600">
   <br>
   <em><p align="center"><b>Model Test Sonucu:</b> Model, yakın mesafede hem çıplak kafayı (head) hem de baretli insanı yüksek güven oranıyla başarıyla ayrıştırıyor.</p></em>
 </p>
@@ -20,7 +20,7 @@ Bu proje, iş sağlığı ve güvenliği (İSG) standartlarına uygun olarak şa
 ### 🔍 Model Açıklanabilirliği (EigenCAM Görselleştirmeleri)
 
 <p align="center">
-  <img src="XAI_Output/ornek_eigencam_1.png" width="48%" alt="">
+  <img src="XAI_Output/ornek_eigencam_1.png" width="48%" alt="Screenshot 2026-08-24 104830.png">
 
 </p>
 
