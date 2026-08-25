@@ -22,15 +22,30 @@ Projenin ilk aşamalarında modelin uzak mesafeden iyi çalışmasına rağmen, 
 ---
 
 ## Proje Yapısı
+```mermaid
+flowchart TD
+    subgraph Data_Prep ["1. Veri Hazırlığı & Ön İşleme"]
+        A[Roboflow / Ham Veri Seti] --> B[Faster R-CNN Dataset<br/>Train / Valid / Test]
+        A --> C[YOLO / RT-DETR Dataset<br/>Train / Valid / Test]
+    end
 
-```text
-helmet_AI/
-│
-├── halmet_dataset/      # Birleştirilmiş uzak ve yakın çekim hibrit veri seti
-│   ├── train/           # Eğitim görselleri ve etiketleri (.txt)
-│   ├── valid/           # Doğrulama görselleri ve etiketleri
-│   └── data.yaml        # Sınıf bilgileri ve klasör yolları
-│
-├── realtime_baret.py    # Canlı kamera (Webcam) tahmin kodu
-├── train_baret.py       # Model eğitim scripti
-└── predict.py           # Tekli görsel test kodu
+    subgraph Modeling ["2. Model Eğitimi & Çıkarım"]
+        B --> D[Faster R-CNN Eğitimi<br/>helmet_detection_fasterrcnn.ipynb]
+        C --> E[YOLO Modelleri Eğitimi<br/>train_baret.py / YOLOv8, YOLO11, YOLO26]
+        C --> F[RT-DETR Mimarisi<br/>helmet_detection_rtdetr.ipynb]
+    end
+
+    subgraph Explainable_AI ["3. Model Açıklanabilirliği (XAI)"]
+        D --> G[EigenCAM Görselleştirme<br/>fasterrcnn_eigercam.ipynb]
+        E --> H[Grad-CAM / EigenCAM Analizi<br/>YOLO_v8_EigenCAM.ipynb / yolo_cam]
+        G & H --> I[XAI_Output & Metrik Grafikleri<br/>faster_rcnn_loss.png]
+    end
+
+    subgraph Deployment ["4. Çıkarım & Canlı Takip (Inference)"]
+        E & F --> J[Model Ağırlıkları<br/>best.pt / rtdetr-l.pt]
+        J --> K[Görsel / Video Tahminleri<br/>predict.py]
+        J --> L[Gerçek Zamanlı Kamera Akışı<br/>realtime_baret.py]
+        L --> M{Baret / Kask Tespiti}
+        M -->|Tespit Edildi| N[Güvenli Alan Analizi & Kayıt]
+        M -->|Tespit Edilemedi| O[Uyarı / Takip Çıktısı]
+    end
